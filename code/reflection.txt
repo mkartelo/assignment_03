@@ -1,6 +1,3 @@
-Write your reflection here.
 
-See reflection.md for what makes a good reflection — be specific, use the
-terminology from this assignment (rerun, widget, return value, guard, bytes vs.
-text, decode, session state, initialise once, button-triggered, metric), and make
-it actionable.
+
+This assignment helped me understand how Streamlit reruns the entire script whenever a user interacts with a widget. In the first app, I learned why a guard was needed so the package was only parsed when the text input had a value. In the second app, I learned that an uploaded file is returned as bytes, so I had to decode it into text before splitting it into lines and processing the packages. The third app helped me understand session state the most. Normal variables would reset on every rerun, so the counters had to be initialized once in session state and updated only when the Process button was triggered. I also learned that the placement of the metric widgets matters because they need to display the updated values after processing. In the future, I would pay closer attention to when Streamlit reruns and decide which values need to persist in session state versus which values can be recalculated.
