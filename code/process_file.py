@@ -57,19 +57,4 @@ if uploaded_file:
         json.dump(packages, json_file, indent=4)
     st.success(f"{len(packages)} packages written to {output_path}")
 
-# 2. Every line: strip it, SKIP IT IF IT IS BLANK, parse it, keep the parsed package
-#    in a list, and show the line with its total. Match this layout:
-#
-#        12 eggs in 1 carton / 3 cartons in 1 box ➡️ Total 📦 Size: 36 eggs
-# TODO
 
-
-# 3. Write the list of parsed packages to data/<name>.json with json.dump, where
-#    <name> is the uploaded file's name with .txt replaced by .json.
-# TODO
-
-
-# 4. Say what happened, exactly:
-#
-#        3 packages written to data/packaging1.json
-# TODO
